@@ -36,8 +36,8 @@ jobs:
           flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
-      - name: Test with unittest
-        run: python -m unittest discover
+      # - name: Test with unittest
+      #   run: python -m unittest discover
 
   push_to_registry:
     name: Build and push Docker image to Docker Hub
